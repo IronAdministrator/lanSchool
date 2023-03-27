@@ -347,9 +347,34 @@ header .nav-main .nav-items .nav-item.insta-icon-container {
   margin-bottom: 2rem;
 }
 
+.section-cards .course-cards {
+  /* display: flex; */
+}
+
 @media only screen and (min-width: 33.75em) {
   .section-cards .course-cards {
-    display: flex;
+    display: grid;
+    gap: 2rem;
+    justify-content: center;
+    /* grid-template-columns: repeat(2, 1fr); */
+  }
+}
+@media only screen and (min-width: 48em) {
+  .section-cards .course-cards {
+    grid-template-columns: repeat(2, 24rem);
+    gap: 1rem;
+  }
+}
+/* @media only screen and (min-width: 62em) {
+  .section-cards .course-cards {
+    grid-template-columns: repeat(2, 24rem);
+    gap: 1rem;
+  }
+} */
+@media only screen and (min-width: 75em) {
+  .section-cards .course-cards {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
   }
 }
 
@@ -373,6 +398,12 @@ header .nav-main .nav-items .nav-item.insta-icon-container {
   border-radius: 0.5rem;
 }
 
+.section-cards .course-cards .card .card-course-list {
+  padding: 0.3rem;
+  border: 1px solid var(--clr-background-secondary);
+  border-radius: 1rem;
+}
+
 @media only screen and (min-width: 33.75em) {
   .section-cards .course-cards .card .card-course-list {
     padding: 0.6rem 1rem;
@@ -389,17 +420,16 @@ header .nav-main .nav-items .nav-item.insta-icon-container {
 
 .section-cards .course-cards .card .card-course-list .course-info {
   display: flex;
-  flex-direction: column;
+  /* flex-direction: column; */
   gap: 1rem;
+  flex-wrap: wrap;
 }
 
-@media only screen and (min-width: 33.75em) {
+/* @media only screen and (min-width: 33.75em) and (max-width: 48em) {
   .section-cards .course-cards .card .card-course-list .course-info {
-    display: flex;
     flex-direction: row;
-    gap: 1rem;
   }
-}
+} */
 
 .section-cards .course-cards .card .card-course-list .course-info .info-pills {
   display: flex;
@@ -417,7 +447,7 @@ header .nav-main .nav-items .nav-item.insta-icon-container {
   justify-content: center;
   align-items: center;
   background-color: var(--clr-blue-200);
-  padding: 0.3rem 1rem;
+  padding: 0.3rem 0.9rem;
   border-radius: 0.5rem;
   font-size: var(--fs-small);
   font-weight: 600;
@@ -426,11 +456,12 @@ header .nav-main .nav-items .nav-item.insta-icon-container {
 
 .section-cards .course-cards .card .card-course-list .course-info .sign-btn {
   display: flex;
+  flex-grow: 1;
 }
 
-@media only screen and (min-width: 33.75em) {
+@media only screen and (min-width: 33.75em) and (max-width: 48em) {
   .section-cards .course-cards .card .card-course-list .course-info .sign-btn {
-    margin-left: auto;
+    /* margin-left: auto; */
   }
 }
 
