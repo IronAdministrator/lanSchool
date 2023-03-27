@@ -349,20 +349,30 @@ header .nav-main .nav-items .nav-item.insta-icon-container {
 
 .section-cards .course-cards {
   /* display: flex; */
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fill,
+    minmax(min(33.125rem, 100%), 33.125rem)
+  );
+  justify-content: center;
+  gap: 2rem;
 }
 
 @media only screen and (min-width: 33.75em) {
   .section-cards .course-cards {
-    display: grid;
+    /* display: grid;
     gap: 2rem;
-    justify-content: center;
+    justify-content: center; */
     /* grid-template-columns: repeat(2, 1fr); */
   }
 }
 @media only screen and (min-width: 48em) {
   .section-cards .course-cards {
-    grid-template-columns: repeat(2, 24rem);
-    gap: 1rem;
+    /* grid-template-columns: repeat(2, 24rem); */
+    /* grid-template-columns: repeat(auto-fill, minmax(min(22rem, 100%), 22rem)); */
+    /* justify-content: space-evenly; */
+    /* gap: 1rem; */
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 /* @media only screen and (min-width: 62em) {
@@ -374,7 +384,6 @@ header .nav-main .nav-items .nav-item.insta-icon-container {
 @media only screen and (min-width: 75em) {
   .section-cards .course-cards {
     grid-template-columns: repeat(2, 1fr);
-    gap: 2rem;
   }
 }
 
@@ -391,10 +400,11 @@ header .nav-main .nav-items .nav-item.insta-icon-container {
   display: flex;
   gap: 0.5rem;
   overflow-x: scroll;
+  height: 8rem;
 }
 
 .section-cards .course-cards .card .card-image img {
-  max-width: 10rem;
+  /* max-width: 10rem; */
   border-radius: 0.5rem;
 }
 
@@ -404,16 +414,14 @@ header .nav-main .nav-items .nav-item.insta-icon-container {
   border-radius: 1rem;
 }
 
-@media only screen and (min-width: 33.75em) {
+@media only screen and (min-width: 75em) {
   .section-cards .course-cards .card .card-course-list {
     padding: 0.6rem 1rem;
-    border: 1px solid var(--clr-background-secondary);
-    border-radius: 1rem;
   }
 }
 
 .section-cards .course-cards .card .card-course-list .course-name {
-  /* font-size: var(--fs-400); */
+  font-size: var(--fs-400);
   font-weight: 600;
   margin-bottom: 0.8rem;
 }
