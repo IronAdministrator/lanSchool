@@ -51,6 +51,7 @@
   --clr-text-muted: var(--clr-grey-500);
   --clr-background-primary: var(--clr-white);
   --clr-background-secondary: #f3f3f3;
+  --clr-background-blue: var(--clr-blue-200);
   --clr-accent: #f82d93;
   /* colors  */
 
@@ -167,6 +168,15 @@ select {
   font-size: var(--fs-800);
   font-weight: 700;
   color: var(--clr-blue-800);
+}
+.primary-btn {
+  border: none;
+  border-radius: 0.6rem;
+  color: var(--clr-text-white);
+  background-color: var(--clr-accent);
+  padding: 0.8rem 1.5rem;
+  font-weight: 600;
+  cursor: pointer;
 }
 .text-muted {
   color: var(--clr-grey-500);
@@ -372,8 +382,20 @@ header .nav-main .nav-items .nav-item.insta-icon-container {
   flex-direction: column;
   gap: 1rem;
   border: 1px solid var(--clr-blue-100);
-  padding: 1rem;
+  padding: 1.5rem 1rem 1rem;
   border-radius: 1rem;
+  position: relative;
+}
+
+.section-cards .course-cards .card .age-info-badge {
+  position: absolute;
+  top: 0;
+  left: 0px;
+  border-right: 1px solid var(--clr-blue-100);
+  border-bottom: 1px solid var(--clr-blue-100);
+  border-radius: 1rem 1rem 1rem 1rem;
+  padding: 0.1rem 0.6rem;
+  font-size: 12px;
 }
 
 .section-cards .course-cards .card .card-image {
@@ -457,5 +479,86 @@ header .nav-main .nav-items .nav-item.insta-icon-container {
   font-weight: 600;
   cursor: pointer;
 }
-
 /* section courses cards */
+
+/* section cta */
+
+.section-cta {
+  background-color: var(--clr-background-blue);
+  padding: 2rem 0 26rem;
+}
+
+@media only screen and (min-width: 48em) {
+  .section-cta {
+    padding: 2rem 0;
+  }
+}
+
+@media only screen and (min-width: 48em) {
+  .section-cta .content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.section-cta .content .cta-left ul.reasons-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  list-style-image: url("/star.svg");
+  font-size: var(--fs-secondary-heading);
+}
+
+.section-cta .content .cta-right {
+  /* display: flex; */
+  /* justify-content: center; */
+}
+@media only screen and (min-width: 48em) {
+  .section-cta .content .cta-right {
+    /* display: flex; */
+  }
+}
+
+.section-cta .content .cta-right .composition {
+  position: relative;
+  max-width: 38rem;
+}
+
+.section-cta .content .cta-right .composition .composition-img {
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
+  border-radius: 0.3rem;
+  position: absolute;
+  z-index: 10;
+  transition: all 0.2s;
+  outline-offset: 2rem;
+}
+@media only screen and (min-width: 48em) {
+  .section-cta .content .cta-right .composition .composition-img {
+    position: relative;
+  }
+}
+
+.section-cta .content .cta-right .composition .composition-img.img-1 {
+  width: 70%;
+  top: 2rem;
+  right: 1rem;
+}
+@media only screen and (min-width: 48em) {
+  .section-cta .content .cta-right .composition .composition-img.img-1 {
+    top: 0;
+    right: 0;
+  }
+}
+
+.section-cta .content .cta-right .composition .composition-img.img-2 {
+  width: 50%;
+  top: 9rem;
+  left: 1rem;
+}
+@media only screen and (min-width: 48em) {
+  .section-cta .content .cta-right .composition .composition-img.img-2 {
+    top: 0;
+    right: 0;
+  }
+}
+/* section cta */
