@@ -497,7 +497,7 @@ header .nav-main .nav-items .nav-item.insta-icon-container {
 
 @media only screen and (min-width: 48em) {
   .section-cta {
-    padding: 3rem 0;
+    padding: 3rem 0 0 0;
   }
 }
 
@@ -580,3 +580,40 @@ header .nav-main .nav-items .nav-item.insta-icon-container {
   }
 }
 /* section cta */
+
+/* section enrollment */
+.section-enrollment {
+  padding: 2rem 0.5rem;
+}
+
+.enrollment-steps-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+  gap: 3rem;
+}
+
+.enrollment-steps-cards .enrollment-card {
+}
+
+.enrollment-steps-cards .enrollment-card .card-header {
+  display: flex;
+}
+
+.enrollment-steps-cards .enrollment-card .card-header .number {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  font-weight: 600;
+  background-color: var(--clr-accent);
+  color: var(--clr-text-white);
+  height: 6rem;
+  width: 6rem;
+  border-radius: 50rem;
+}
+
+.enrollment-steps-cards .enrollment-card .card-title {
+  font-size: 2rem;
+}
+
+/* section enrollment */
