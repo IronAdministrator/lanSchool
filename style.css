@@ -73,7 +73,7 @@
 @media (min-width: 75em) {
   :root {
     --fs-primary-heading: 2.5rem;
-    --fs-secondary-heading: 1.6rem;
+    --fs-secondary-heading: var(--fs-700);
   }
 }
 /* global css root variables setup */
@@ -515,6 +515,7 @@ header .nav-main .nav-items .nav-item.insta-icon-container {
   gap: 1rem;
   list-style-image: url("/star.svg");
   font-size: var(--fs-secondary-heading);
+  font-weight: 300;
 }
 
 .section-cta .content .cta-right {
@@ -540,7 +541,14 @@ header .nav-main .nav-items .nav-item.insta-icon-container {
   position: relative;
   /* z-index: 10; */
   transition: all 0.2s;
-  /* outline-offset: 2rem; */
+  outline-offset: 1rem;
+}
+.section-cta .content .cta-right .composition .composition-img:hover {
+  transform: scale(1.1) translateY(-0.5rem);
+  z-index: 100;
+  box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.15);
+  outline: 0.5rem solid var(--clr-blue-400);
+  border-radius: 1rem;
 }
 @media only screen and (min-width: 48em) {
   .section-cta .content .cta-right .composition .composition-img {
@@ -551,7 +559,6 @@ header .nav-main .nav-items .nav-item.insta-icon-container {
 .section-cta .content .cta-right .composition .composition-img.img-1 {
   width: 70%;
   top: 2rem;
-  /* right: 1rem; */
   float: right;
 }
 @media only screen and (min-width: 48em) {
@@ -565,7 +572,6 @@ header .nav-main .nav-items .nav-item.insta-icon-container {
 .section-cta .content .cta-right .composition .composition-img.img-2 {
   width: 50%;
   top: -2rem;
-  /* left: 1rem; */
 }
 @media only screen and (min-width: 48em) {
   .section-cta .content .cta-right .composition .composition-img.img-2 {
