@@ -214,9 +214,15 @@ body {
   margin-inline: auto;
   padding-inline: 0.5rem;
 }
+@media (min-width: 33.75em) {
+  .container {
+    padding-inline: 1rem;
+  }
+}
 @media (min-width: 62em) {
   .container {
     max-width: 95%;
+    /* padding-inline: 0.5rem; */
   }
 }
 @media (min-width: 87.5em) {
@@ -485,12 +491,13 @@ header .nav-main .nav-items .nav-item.insta-icon-container {
 
 .section-cta {
   background-color: var(--clr-background-blue);
-  padding: 2rem 0 26rem;
+  /* padding: 2rem 0 26rem; */
+  padding: 2rem 0 0 0;
 }
 
 @media only screen and (min-width: 48em) {
   .section-cta {
-    padding: 2rem 0;
+    padding: 3rem 0;
   }
 }
 
@@ -498,6 +505,7 @@ header .nav-main .nav-items .nav-item.insta-icon-container {
   .section-cta .content {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
   }
 }
 
@@ -510,27 +518,29 @@ header .nav-main .nav-items .nav-item.insta-icon-container {
 }
 
 .section-cta .content .cta-right {
-  /* display: flex; */
-  /* justify-content: center; */
+  display: flex;
+  justify-content: center;
 }
 @media only screen and (min-width: 48em) {
   .section-cta .content .cta-right {
-    /* display: flex; */
+    display: flex;
   }
 }
 
 .section-cta .content .cta-right .composition {
   position: relative;
   max-width: 38rem;
+  padding-inline: 1rem;
+  align-self: center;
 }
 
 .section-cta .content .cta-right .composition .composition-img {
   box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
   border-radius: 0.3rem;
-  position: absolute;
-  z-index: 10;
+  position: relative;
+  /* z-index: 10; */
   transition: all 0.2s;
-  outline-offset: 2rem;
+  /* outline-offset: 2rem; */
 }
 @media only screen and (min-width: 48em) {
   .section-cta .content .cta-right .composition .composition-img {
@@ -541,23 +551,25 @@ header .nav-main .nav-items .nav-item.insta-icon-container {
 .section-cta .content .cta-right .composition .composition-img.img-1 {
   width: 70%;
   top: 2rem;
-  right: 1rem;
+  /* right: 1rem; */
+  float: right;
 }
 @media only screen and (min-width: 48em) {
   .section-cta .content .cta-right .composition .composition-img.img-1 {
     top: 0;
     right: 0;
+    float: right;
   }
 }
 
 .section-cta .content .cta-right .composition .composition-img.img-2 {
   width: 50%;
-  top: 9rem;
-  left: 1rem;
+  top: -2rem;
+  /* left: 1rem; */
 }
 @media only screen and (min-width: 48em) {
   .section-cta .content .cta-right .composition .composition-img.img-2 {
-    top: 0;
+    top: -5rem;
     right: 0;
   }
 }
