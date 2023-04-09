@@ -492,12 +492,12 @@ header .nav-main .nav-items .nav-item.insta-icon-container {
 .section-cta {
   background-color: var(--clr-background-blue);
   /* padding: 2rem 0 26rem; */
-  padding: 2rem 0 0 0;
+  padding: 3rem 0 0 0;
 }
 
 @media only screen and (min-width: 48em) {
   .section-cta {
-    padding: 3rem 0 0 0;
+    padding: 4rem 0 0 0;
   }
 }
 
@@ -653,3 +653,33 @@ header .nav-main .nav-items .nav-item.insta-icon-container {
 }
 
 /* section enrollment */
+
+/* section footer */
+.primary-footer {
+  background-color: var(--clr-blue-400);
+  color: var(--clr-text-white);
+  padding: 2rem 0;
+  font-size: var(--fs-300);
+  font-weight: 500;
+}
+
+@media only screen and (min-width: 62em) {
+  .primary-footer .footer-wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.primary-footer .footer-links {
+  list-style: none;
+  padding: 0;
+  margin-top: 0;
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.primary-footer .signature {
+  text-align: center;
+}
+/* section footer */
