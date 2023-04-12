@@ -513,7 +513,7 @@ header .nav-main .nav-items .nav-item.insta-icon-container {
   display: flex;
   flex-direction: column;
   gap: 1rem;
-  list-style-image: url("/star.svg");
+  list-style-image: url("assets/star.svg");
   font-size: var(--fs-secondary-heading);
   font-weight: 300;
 }
@@ -676,7 +676,7 @@ header .nav-main .nav-items .nav-item.insta-icon-container {
   margin-top: 0;
   display: flex;
   justify-content: center;
-  gap: 0.5rem;
+  gap: 1rem;
 }
 
 .primary-footer .signature {
